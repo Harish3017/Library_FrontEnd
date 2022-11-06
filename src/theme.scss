@@ -1,0 +1,28 @@
+@import "/src/colors.scss";
+
+.table {
+    width: 100%;
+    background-color: $color-white;
+
+    thead {
+        background-color: $color-thead;
+
+        tr {
+            th {
+                padding: 10px;
+                text-transform: uppercase;
+                color: $color-primary;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #e4e5e6;
+
+            td {
+                padding: 10px;
+            }
+        }
+    }
+}

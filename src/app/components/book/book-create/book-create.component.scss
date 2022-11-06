@@ -1,0 +1,96 @@
+@import "/src/theme.scss";
+
+.header {
+    background: $color-primary;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+
+    .button-close {
+        float: right;
+        font-weight: 600;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .button-close:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.container {
+    .row {
+        form {
+            width: 100%;
+
+            mat-form-field {
+                width: 100%;
+            }
+
+            button {
+                padding: 5px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .wrapper-upload {
+                border: 2px solid #088178;
+                border-radius: 5px;
+                border-style: dashed;
+                text-align: center;
+                margin-bottom: 20px;
+
+                .wrapper-text {
+                    width: 95%;
+                    padding: 50px 0;
+                    margin: 0 auto;
+
+                    img {
+                        width: 50px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        a {
+                            color: $color-primary;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .button-close {
+                    font-weight: 600;
+                    margin-left: 20px;
+                    color: #088178;
+                }
+
+                .button-close:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+mat-spinner {
+    display: inline-block;
+    position: absolute;
+    left: 115px;
+    top: 8px;
+}
+
+::ng-deep .reset-spinner circle,
+.login-spinner circle {
+    stroke: #fff;
+}
+
+::ng-deep mat-dialog-container {
+    padding: 0 !important;
+}
+
+::ng-deep .cdk-global-scrollblock {
+    position: static;
+    overflow: hidden !important;
+}

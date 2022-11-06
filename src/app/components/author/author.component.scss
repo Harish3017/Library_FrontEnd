@@ -1,0 +1,30 @@
+@import "/src/theme.scss";
+
+header {
+    margin-bottom: 15px;
+
+    h3 {
+        font-weight: 600;
+        display: inline-block;
+        margin: 0 20px 15px 0;
+        font-weight: 600;
+    }
+
+    .btn-create {
+        float: right;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 10px;
+
+    ng-select {
+        width: 150px;
+    }
+}
+
+.section {
+    text-align: center;
+    padding: 50px 0;
+}

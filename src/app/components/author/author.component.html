@@ -1,0 +1,38 @@
+<app-header></app-header>
+<header>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Authors</h3>
+            <p>All Authors Details are listed here.</p>
+        </div>
+        <div class="col-md-6">
+            <button class="button-primary btn-create" (click)="onCreate()">
+                CREATE NEW
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="row">
+    <div class="wrapper">
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr *ngFor="let author of authors" >
+                        <td>{{ author.firstName}}</td>
+                        <td>{{ author.lastName}}</td>
+                    <td>
+                        <button class="button-primary" (click)="onEdit(author._id)" >EDIT</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

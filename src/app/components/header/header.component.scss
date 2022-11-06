@@ -1,0 +1,23 @@
+@import '/src/colors.scss';
+p {
+    font-family: Lato;
+  }
+
+  .wrapper-menu {
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 30px;
+
+            a:hover {
+                border-bottom: 1px solid $color-orange;
+                color: $color-black;
+            }
+
+        }
+    }
+}

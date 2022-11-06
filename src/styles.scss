@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "/src/colors.scss";
+
+*,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color-primary;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: $color-primary;
+    color: $color-white;
+    font-weight: 600;
+    border: 2px solid $color-primary;
+}
+
+.button-primary:hover:enabled {
+    background-color: $color-white;
+    color: $color-primary;
+    font-weight: 600;
+    border: 2px solid $color-primary;
+}
+
+.button-secondary {
+    background-color: $color-primary;
+    color: $color-primary;
+    font-weight: 600;
+    border: 2px solid $color-primary;
+}
+
+.button-secondary:hover {
+    background-color: $color-background;
+    color: $color-primary;
+    font-weight: 600;
+    border: 2px solid $color-primary;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+mat-chip {
+    border-radius: 4px !important;
+}
